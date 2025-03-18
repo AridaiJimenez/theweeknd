@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discografía | The Weeknd</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>DISCOGRAFIA</h1>
+    </header>
+    <main>
+        <div class="album-container">
+            <div class="album" onclick="mostrarCanciones('house-ballons')">
+                <div class="disco"></div>
+                <img src="img/1.png" alt="HouseOfBallons">
+                <p>House of Balloons (2011)</p>
+            </div>
+            <div class="album" onclick="mostrarCanciones('thursday')">
+                <div class="disco"></div>
+                <img src="img/2.jpg" alt="Thursday">
+                <p>Thursday (2011)</p>
+            </div>
+            <div class="album" onclick="mostrarCanciones('echoes-of-silence')">
+                <div class="disco"></div>
+                <img src="img/3.jpg" alt="EchoesOfSilence">
+                <p>Echoes of Silence (2011)</p>
+            </div>
+            <div class="album" onclick="mostrarCanciones('trilogy')">
+                <div class="disco"></div>
+                <img src="img/4.png" alt="Trilogy">
+                <p>Trilogy (2012)</p>
+            </div>
+            <div class="album" onclick="mostrarCanciones('kiss-land')">
+                <div class="disco"></div>
+                <img src="img/5.jpg" alt="KissLand">
+                <p>Kiss Land (2013)</p>
+            </div>
+            <div class="album" onclick="mostrarCanciones('beauty-behind-the-madness')">
+                <div class="disco"></div>
+                <img src="img/6.png" alt="BeautyBehindTheMadness">
+                <p>Beauty Behind the Madness (2015)</p>
+            </div>
+            <div class="album" onclick="mostrarCanciones('starboy')">
+                <div class="disco"></div>
+                <img src="img/7.jpg" alt="Starboy">
+                <p>Starboy (2016)</p>
+            </div>
+            <div class="album" onclick="mostrarCanciones('my-dear-melancholy')">
+                <div class="disco"></div>
+                <img src="img/8.jpg" alt="MyDearMelancholy">
+                <p>My Dear Melancholy (2018)</p>
+            </div>
+            <div class="album" onclick="mostrarCanciones('after-hours')">
+                <div class="disco"></div>
+                <img src="img/9.png" alt="After Hours">
+                <p>After Hours (2020)</p>
+            </div>
+            <div class="album" onclick="mostrarCanciones('dawn-fm')">
+                <div class="disco"></div>
+                <img src="img/10.png" alt="DawnFM">
+                <p>Dawn FM (2022)</p>
+            </div>
+            <div class="album" onclick="mostrarCanciones('live-at-sofi')">
+                <div class="disco"></div>
+                <img src="img/11.jpg" alt="LiveAtSoFiStadium">
+                <p>Live at SoFi Stadium (2023)</p>
+            </div>
+            <div class="album" onclick="mostrarCanciones('hurry-up-tomorrow')">
+                <div class="disco"></div>
+                <img src="img/12.png" alt="HurryUpTomorrow">
+                <p>Hurry Up Tomorrow (2025)</p>
+            </div>
+        </div>
+    </main>
+
+   <!-- Ventana emergente para las canciones del álbum -->
+<div id="popup-album" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="cerrarPopupAlbum()">&times;</span>
+        <h2 id="album-title"></h2>
+        <ul id="canciones-list"></ul>
+    </div>
+</div>
+
+<!-- Ventana emergente para la reproducción de música -->
+<div id="popup-musica" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="cerrarPopupMusica()">&times;</span>
+        <h2 id="cancion-title"></h2>
+        <audio id="audio-player" controls></audio>
+        <p id="letra"></p>
+    </div>
+</div>
+
+<script>
+    // Convertir la letra en líneas con <br>
+    const letraConBr = houseBallons.lista[0].letra.split('\n').map(line => line.trim()).join('<br>');
+    letraDiv.innerHTML = letraConBr;
+</script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,259 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif; /* Tipo de letra principal */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #000000;
+}
+
+/* Header y menú horizontal */
+header {
+    background-color: #000000; /* Negro para el fondo del header */
+    padding: 1em 0;
+}
+
+.menu-horizontal {
+    list-style-type: none; /* Sin viñetas */
+    display: flex; /* Para que el menú sea horizontal */
+    justify-content: center; /* Centrar menú */
+}
+
+.menu-horizontal li {
+    margin: 0 1em; /* Espacio entre elementos del menú */
+}
+
+.menu-horizontal a {
+    color: #ffffff; /* Blanco para el texto */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Sección principal */
+.hero {
+    background-image: url('fondo.png'); /* Fondo */
+    background-size: cover; /* Cubrir toda la sección */
+    background-position: center; /* Centrar la imagen */
+    color: #ffffff; /* blanco */
+    padding: 5em 0; /* Espaciado */
+    text-align: center; /* Centrar texto */
+}
+
+/* Secciones */
+.section-box {
+    background-color: #FFF;
+    border: 2px solid #ff0000; /* Borde rojo */
+    border-radius: 8px;
+    padding: 2em;
+    margin: 2em auto; /* Centrar */
+    max-width: 800px; /* Ancho máximo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Datos personales */
+.datos-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrar */
+}
+
+.profile-pic {
+    width: 250px;
+    border-radius: 50%; /* Imagen circular */
+    margin-right: 2em;
+    border: 4px solid #000000; /* Borde negro */
+    animation: fadeIn 1s ease-in; /* Animación al cargar */
+}
+
+.info {
+    max-width: 650px; /* Ancho máximo */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+/* Títulos de las secciones */
+.section-box h2 {
+    text-align: center;
+    color: #000000; /* Color oscuro para los títulos */
+    margin-bottom: 1em;
+}
+
+/* Galería de imágenes */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1em;
+}
+
+.gallery img {
+    width: 30%;
+    border-radius: 8px;
+    animation: fadeIn 0.5s ease-in; /* Animación al cargar */
+}
+
+/* Contenedor de video */
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+/* Formulario de contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto; /* Centrar */
+}
+
+form input,
+form textarea {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 2px solid #000000; /* Borde negro */
+    border-radius: 5px;
+}
+
+form button {
+    padding: 0.7em;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff0000;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+form button:hover {
+    background-color: #ff0000; /* Cambio de color al pasar el mouse */
+}
+
+/* Footer */
+footer {
+    background: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+
+/* Estilos para los lugares visitados */
+.lugar {
+    border-radius: 8px;
+    padding: 1em;
+    margin: 1em 0; /* Espacio entre lugares */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+foter {
+    color: black;
+    text-align: center;
+    
+}
+.redes-sociales img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+button {
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+/* Estilo de la galería */
+.galeria {
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .galeria li {
+    margin: 5px;
+  }
+  
+  .galeria img {
+    width: 200px; /* Tamaño más adecuado para las imágenes */
+    height: 250px; /* Mantiene la relación de aspecto original */
+    border-radius: 25px;
+    border: 2px solid #ff0000;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo para la ventana modal */
+.modal {
+    display: none;
+  }
+  
+  .modal:target {
+    display: block;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .modal h3 {
+    color: #fff;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 30px;
+  }
+  
+  .imagen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imagen a:nth-child(2) {
+    margin: 0;
+    height: 100%;
+  }
+  
+  .foto {
+    max-width: 30%; /* Ajustado para hacer la imagen más pequeña */
+    max-height: 30%; /* Ajustado para hacer la imagen más pequeña */
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    border-radius: 25px;
+  }
